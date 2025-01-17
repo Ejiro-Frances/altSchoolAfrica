@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 96vh;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+main {
+  border: 10px solid #e5e7eb;
+}
+section {
+  background: #000000e3;
+  width: 38rem;
+  min-height: 23rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  max-width: 27rem;
+  min-height: 10rem;
+  margin-top: 2.5rem;
+  background: #fff;
+  border-radius: 8px;
+}
+.essay-block {
+  width: 22rem;
+  height: 6rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: #d5067f;
+  font-weight: 750;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+}
+section p {
+  padding: 4.8rem 2.4rem 1.6rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
