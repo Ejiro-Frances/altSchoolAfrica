@@ -19,33 +19,16 @@ body {
   max-width: 128rem;
   margin: auto;
   font-size: 1.6rem;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
-
-/* .main {
-  max-width: 128rem;
-  margin: auto;
-  padding: 2rem;
-  background: #fff;
-  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
-} */
 .intro-section {
-  background: #fff;
   min-height: 38.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 26rem;
   border-bottom: 8px solid #999999;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .primary-heading {
