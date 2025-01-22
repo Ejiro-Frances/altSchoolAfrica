@@ -9,6 +9,9 @@
   <body>
     <main class="main">
       <section class="description-section">
+        <div class="logo-container">
+          <img class="logo" src="./assets/images/Logo.png" alt="Logo" />
+        </div>
         <h1 class="primary-description">For Individuals</h1>
         <p class="primary-text">
           Start benefiting from the wellness experience. For companies looking
@@ -36,7 +39,7 @@
             <!-- gender -->
             <div>
               <label for="gender">Gender</label>
-              <select name="gender" id="gender" placeholder="Select here">
+              <select name="gender" id="gender">
                 <option value="select-here">Select here</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -78,7 +81,7 @@
           </fieldset>
 
           <!-- activity level -->
-          <fieldset>
+          <fieldset class="no-grid">
             <div>
               <label for="activity-level">Activity Level</label>
               <select name="activity" id="activity-level">
@@ -87,7 +90,7 @@
             </div>
           </fieldset>
           <!-- password -->
-          <fieldset>
+          <fieldset class="no-grid">
             <div class="password-container">
               <label for="password">Password</label>
               <input

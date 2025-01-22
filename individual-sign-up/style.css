@@ -9,7 +9,9 @@
 @font-face {
   font-family: sofia-pro;
   src: url("./assets/font/sofia pro/sofia-pro\Sofia Pro Medium Italic Az.otf");
+  src: url("./assets/font/sofia\ pro/Sofia Pro UltraLight Az.otf");
 }
+
 *,
 *::before,
 *::after {
@@ -26,7 +28,7 @@ body {
   font-family: "brown-font";
   font-size: 1.6rem;
   font-weight: 400;
-  background: rgba(247, 253, 252, 0.4);
+  background: rgba(247, 253, 252, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,6 +57,14 @@ body {
   min-height: 27.5rem;
   align-content: center;
 }
+.logo-container {
+  width: 8rem;
+  height: 8rem;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
 .primary-description {
   color: #000b0a;
   font-size: 4rem;
@@ -63,7 +73,7 @@ body {
   letter-spacing: -0.800000011920929px;
   text-align: left;
   text-underline-position: from-font;
-  margin-bottom: 1rem;
+  margin: 1.7rem 0;
 }
 .primary-text {
   color: #737373;
@@ -80,64 +90,100 @@ body {
 .sign-up-form-section {
   background: #fff;
   max-width: 58rem;
-  min-height: 67.9rem;
+  min-height: 50rem;
   top: 8.1rem;
   left: 720px;
   border-radius: 0.6rem;
-  padding: 2rem;
+  padding: 4rem;
   box-shadow: 0 4px 50px 0 rgba(4, 8, 19, 0.102);
 }
+
 .sign-up-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.8rem;
 }
+
 fieldset {
   border: none;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
 }
+
+.no-grid {
+  display: block;
+}
+
 fieldset div {
   display: flex;
   flex-direction: column;
 }
+
 input,
 select {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
+  padding: 1.3rem;
   outline: none;
-  border: 1px solid rgba(240, 234, 234, 0.1);
+  border: 1px solid rgba(240, 234, 234, 0.5);
 }
+
+input::placeholder,
+select {
+  color: #737373;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0.2px;
+}
+
+label {
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  color: #011c34;
+  font-size: 1.4rem;
+}
+
 .password-container {
   position: relative;
 }
+
 .password {
   padding-right: 4rem;
 }
+
 .password-show {
   position: absolute;
   top: 50%;
   right: 1rem;
 }
+
 .submit-btn {
+  background: #2ec4b6;
   border: none;
   outline: none;
   width: 100%;
-  background: #77d1d7;
   margin: 1rem 0;
   padding: 2rem;
   color: #fff;
   border-radius: 0.3rem;
   box-shadow: 0 0.4rem 5rem 0 rgba(4, 8, 19, 0.2);
+  font-weight: 600;
+  font-family: Sofia Pro;
+  letter-spacing: 1.2px;
+  text-align: center;
 }
+
+.submit-btn:hover {
+  background: #30beaeb3;
+}
+
 .condition {
   font-size: 1.4rem;
   margin-top: 1rem;
   line-height: 2.5rem;
   font-family: sofia-pro;
 }
+
 .condition a {
   padding-bottom: 1.2px;
   color: #77d1d7;
@@ -145,6 +191,22 @@ select {
   font-family: inherit;
   font-size: inherit;
 }
+
+.condition a:hover {
+  text-decoration: none;
+}
+
 /* *************************** */
-/* ******* SECTION******** */
-/* *******MAIN SECTION******** */
+/* *******MEDIA QUERY******** */
+/* *************************** */
+@media (max-width: 58rem) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 3rem;
+  }
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+}

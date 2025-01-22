@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wp Pusher</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="#">
+          <img src="./assets/wppusher-logo.png" alt="Wp-pusher Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="main-nav-links">
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Learn More</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a class="account-btn" href="#">Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="container">
+        <section class="checkout-section">
+          <header class="checkout-header">
+            <h1 class="checkout-title">Checkout</h1>
+          </header>
+          <div class="in-container basic-info-container">
+            <div class="line-one">
+              <button class="number-btn">1</button>
+              <p class="info-p">Your Basic Information</p>
+            </div>
+            <fieldset class="name-container">
+              <div class="name-box">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="f-name"
+                  placeholder="Jane"
+                  required
+                />
+              </div>
+              <!-- last name -->
+              <div class="name-box">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="l-name"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+            </fieldset>
+            <div>
+              <label for="email">Email</label>
+              <input
+                class="email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="janedoe@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- payment information -->
+          <div class="in-container">
+            <div class="line-one">
+              <button class="number-btn">2</button>
+              <p class="info-p">Your Payment Information</p>
+            </div>
+            <!-- credit card -->
+            <div>
+              <label for="credit-card">Credit Card</label>
+              <div class="credit-card-inputs">
+                <input
+                  type="number"
+                  name="credit-card"
+                  id="credit-card"
+                  placeholder="Card Number"
+                  required
+                />
+                <input
+                  type="text"
+                  id="expiry-date"
+                  name="card-expiry"
+                  placeholder="MM/YY"
+                  maxlength="5"
+                  required
+                />
+                <input
+                  type="number"
+                  name="cvc"
+                  id="cvc"
+                  placeholder="CVC"
+                  maxlength="3"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- end -->
+          <div class="in-container">
+            <button class="submit-btn">Buy WP Pusher</button>
+
+            <div class="support-text">
+              <img
+                class="question-mark"
+                src="./assets/Mask.png"
+                alt="question mark in a circle"
+              />
+              <p class="need-help">
+                Need any help?
+                <span>Don't hesitate to contact support</span>
+              </p>
+            </div>
+          </div>
+          <div class="powered-by">
+            <p>
+              <small>Powered by</small>
+              <span>stripe</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- part 2 -->
+        <section class="freelancer-section">
+          <div>
+            <p class="freelance-title">Freelancer</p>
+            <h2 class="freelance-price">
+              <sup class="dollar-sign">$</sup>
+              99
+              <span class="year">/ year</span>
+            </h2>
+            <p>Automatically renews after 1 year</p>
+          </div>
+
+          <ul class="freelance-perks">
+            <li>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#B9F5FF"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+
+              <span>
+                Use on
+                <span class="bold-700">5</span>
+                client sites
+              </span>
+            </li>
+            <li>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#B9F5FF"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span>Private repositories</span>
+            </li>
+            <li>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#B9F5FF"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span>Email support</span>
+            </li>
+          </ul>
+
+          <div class="plan-switch-box">
+            <p class="client-p">
+              Need
+              <span class="bold-700">20</span>
+              client sites?
+            </p>
+            <a href="#" class="bold-700">
+              Switch to the
+              <span class="agency">Agency</span>
+              plan.
+            </a>
+          </div>
+
+          <blockquote>
+            <p class="testimonial">
+              <span>FTP</span>
+              is horrible to deal with.
+
+              <span class="bold-700">WP Pusher</span>
+              solves that issue, and the customer support is awesome!
+            </p>
+
+            <div class="testimonial-profile">
+              <img src="./assets/Bitmap.png" alt="Kirk Beard" />
+              <h3>Kirk Beard</h3>
+            </div>
+          </blockquote>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2018 WP Pusher IVS ·
+        <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+  </body>
+</html>
