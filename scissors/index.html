@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div>
-        <img src="./assets/Vector.png" alt="" />
-        <img src="./assets/SCISSOR.png" alt="" />
+        <img class="logo-icon" src="./assets/Vector.png" alt="Logo icon" />
+        <img src="./assets/SCISSOR.png" alt="Scissors text" />
       </div>
 
       <nav>
-        <ul>
-          <li><a href="#">My URLs</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">FAQs</a></li>
+        <ul class="main-nav-links">
+          <li><a class="main-nav-link active" href="#">My URLs</a></li>
+          <li><a class="main-nav-link" href="#">Features</a></li>
+          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link" href="#">Analytics</a></li>
+          <li><a class="main-nav-link" href="#">FAQs</a></li>
         </ul>
       </nav>
 
       <div>
-        <ul>
-          <li><a href="#">Log in</a></li>
-          <li><a href="#">Try for free</a></li>
+        <ul class="main-cta-box">
+          <li><a class="btn" href="#">Log in</a></li>
+          <li><a class="cta" href="#">Try for free</a></li>
         </ul>
       </div>
     </header>
@@ -36,7 +36,14 @@
         <div>
           <h1 class="heading-title">
             Optimize Your Online Experience with Our Advanced
-            <span>URL Shortening</span>
+            <span class="heading-span">
+              URL Shortening
+              <img
+                class="span-underline"
+                src="./assets/line.png"
+                alt="A line"
+              />
+            </span>
             Solution
           </h1>
           <p class="hero-description">
@@ -46,32 +53,295 @@
             engagement.
           </p>
         </div>
-        <div>
-          <a href="#">Sign Up</a>
-          <a href="#">Learn more</a>
+        <div class="btn-container">
+          <a class="cta" href="#">Sign Up</a>
+          <a class="btn margin-left-md" href="#">Learn more</a>
         </div>
       </section>
 
       <section class="transform-section">
         <div class="transform-vector-box">
           <img src="./assets/Vector 2.png" alt="" />
+
+          <div class="transform-box">
+            <div>
+              <div class="transform-img-container">
+                <div>
+                  <img src="./assets/link.png" alt="" />
+                  <img src="./assets/link.png" alt="" />
+                  <img src="./assets/link.png" alt="" />
+                </div>
+                <img src="./assets/Line 7.png" alt="Forward Arrow" />
+                <img src="./assets/link.png" alt="" />
+              </div>
+
+              <p class="transform-text">
+                Seamlessly transform your long URLs into concise and shareable
+                links with just few clicks.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Possibilities -->
+      <section class="possibility-section">
+        <div class="ellipse-container">
+          <img src="./assets/Ellipse 1.png" alt="" />
+        </div>
+        <!-- next -->
         <div>
           <div>
-            <div>
-              <img src="./assets/link.png" alt="" />
-              <img src="./assets/link.png" alt="" />
-              <img src="./assets/link.png" alt="" />
-            </div>
-            <img src="./assets/Line 7.png" alt="Forward Arrow" />
-            <img src="./assets/link.png" alt="" />
+            <h3>One Stop.</h3>
+            <h3>
+              Four
+              <span>Possibilities.</span>
+            </h3>
           </div>
 
-          <p>
-            Seamlessly transform your long URLs into concise and shareable links
-            with just few clicks.
-          </p>
+          <div>
+            <h4>3M</h4>
+            <p>Active Users</p>
+          </div>
+
+          <div>
+            <h3>60M</h3>
+            <p>Links & QR Codes created</p>
+          </div>
+
+          <div>
+            <h3>1B</h3>
+            <p>Clicked & Scanned connections</p>
+          </div>
+
+          <div>
+            <h3>300K</h3>
+            <p>App integrations</p>
+          </div>
         </div>
+      </section>
+
+      <section>
+        <!-- small line -->
+        <div></div>
+        <!-- why -->
+        <div>
+          <h3>
+            Why choose
+            <span>Scissors</span>
+          </h3>
+          <p>
+            Scissors is the hub of everything that has to do with your link
+            management. We shorten your URLs, allow you creating custom ones for
+            your personal, business, event usage. Our swift QR code creation,
+            management and usage tracking with advance analytics for all of
+            these is second to none.
+          </p>
+          <!-- grid container -->
+          <div>
+            <div>
+              <div class="icon-container">
+                <img src="" alt="" />
+              </div>
+              <h4>URL Shortening</h4>
+              <p>
+                Scissor allows you to shorten URLs of your business, events.
+                Shorten your URL at scale, URL redirects.
+              </p>
+            </div>
+
+            <div>
+              <div class="icon-container">
+                <img src="" alt="" />
+              </div>
+              <h3>Custom URLs</h3>
+              <p>
+                With Scissor, you can create custom URLs, with the length you
+                want! A solution for socials and businesses.
+              </p>
+            </div>
+
+            <div>
+              <div class="icon-container">
+                <img src="" alt="" />
+              </div>
+              <h3>QR Codes</h3>
+              <p>
+                Generate QR codes to your business, events. Bring your audience
+                and customers to your doorstep with this scan and go solution.
+              </p>
+            </div>
+
+            <div>
+              <div class="icon-container">
+                <img src="" alt="" />
+              </div>
+              <h3>Data Analytics</h3>
+              <p>
+                Receive data on the usage of either your shortened URL, custom
+                URLs or generated QR codes. Embedded to monitor progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- line -->
+        <div></div>
+        <!-- text -->
+        <h4>
+          A
+          <span>price perfect</span>
+          for your needs.
+        </h4>
+        <p>
+          From catering for your personal, business, event, socials needs, you
+          can be rest assured we have you in mind in our pricing.
+        </p>
+      </section>
+
+      <section class="plans-container">
+        <!-- basic -->
+        <div class="plan-box">
+          <h6 class="plan-title">Basic</h6>
+          <p class="plan-price">Free</p>
+          <p class="plan-description">Free plan for all users</p>
+          <ul class="plan-lists">
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Unlimited URL Shortening</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Basic Link Analytics</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Customizable Short Links</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Standard Support</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Ad-supported</span>
+            </li>
+          </ul>
+        </div>
+        <!-- professional -->
+        <div class="plan-box">
+          <h6 class="plan-title">Professional</h6>
+          <p class="plan-price">$15/month</p>
+          <p class="plan-description">Ideal for business creators</p>
+          <ul class="plan-lists">
+            <li>
+              <img
+                src="./assets/check-circle-white.svg"
+                alt="blue check mark"
+              />
+              <span>Enhanced Link Analytics</span>
+            </li>
+
+            <li>
+              <img
+                src="./assets/check-circle-white.svg"
+                alt="blue check mark"
+              />
+              <span>Custom Branded Domains</span>
+            </li>
+
+            <li>
+              <img
+                src="./assets/check-circle-white.svg"
+                alt="blue check mark"
+              />
+              <span>Advanced Link Customization</span>
+            </li>
+
+            <li>
+              <img
+                src="./assets/check-circle-white.svg"
+                alt="blue check mark"
+              />
+              <span>Priority Support</span>
+            </li>
+
+            <li>
+              <img
+                src="./assets/check-circle-white.svg"
+                alt="blue check mark"
+              />
+              <span>Ad-free Experience</span>
+            </li>
+          </ul>
+        </div>
+        <!-- teams -->
+        <div class="plan-box">
+          <h6 class="plan-title">Teams</h6>
+          <p class="plan-price">$25/month</p>
+          <p class="plan-description">Share with up to 10 users</p>
+          <ul class="plan-lists">
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Team Collaboration</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>user Roles and Permissions</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Enhanced Security</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>API Access</span>
+            </li>
+
+            <li>
+              <img src="./assets/check-circle.svg" alt="blue check mark" />
+              <span>Dedicated Account Manager</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- buttons -->
+        <div>
+          <a href="#">Get Custom Pricing</a>
+          <a class="cta" href="#">Select Pricing</a>
+        </div>
+      </section>
+
+      <!-- Trim URL Section -->
+      <section>
+        <form action="#">
+          <input type="url" placeholder="Paste URL here..." />
+          <fieldset>
+            <select name="" id="">
+              <option value="">Choose Domain</option>
+            </select>
+
+            <input type="text" placeholder="Type Alias here" />
+          </fieldset>
+
+          <input type="submit" value="Trim URL" />
+          <p>
+            By clicking TrimURL, I agree to the
+            <a href="#">Terms of service,</a>
+            <a href="#">Privacy Policy</a>
+            and Use of Cookies.
+          </p>
+        </form>
+        <p>FAQs</p>
       </section>
     </main>
     <footer></footer>

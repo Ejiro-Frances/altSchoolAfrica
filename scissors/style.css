@@ -8,3 +8,131 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #141414;
+  max-width: 115rem;
+  margin: 2.5rem auto;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* ****************************** */
+/* ******REUSEABLE STYLES******* */
+/* ****************************** */
+.btn-container {
+  margin: 9.4rem 0;
+}
+.margin-left-md {
+  margin-left: 4.2rem;
+}
+
+/* ******************************* */
+/* ***********HEADER************* */
+/* ****************************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-icon {
+  border-right: 0.3rem solid blue;
+  margin-right: 0.3rem;
+  padding-right: 0.6rem;
+}
+
+.main-nav-links,
+.main-cta-box {
+  display: flex;
+  gap: 2.4rem;
+}
+.main-nav-links {
+  gap: 4rem;
+}
+.main-nav-link.active,
+.main-nav-link:hover,
+.btn {
+  color: #0065fe;
+}
+.cta {
+  background: #0065fe;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10rem;
+}
+/* ****************************** */
+/* **********HERO SECTION******** */
+/* ****************************** */
+.hero-section {
+  max-width: 94.8rem;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+.heading-title {
+  font-size: 4.8rem;
+  line-height: 2;
+}
+.heading-span {
+  position: relative;
+  color: #0065fe;
+}
+.span-underline {
+  position: absolute;
+  bottom: -18px;
+  left: 85px;
+}
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.55;
+}
+
+/* ****************************** */
+/* ******TRANSFORM SECTION******* */
+/* ****************************** */
+.transform-section {
+  max-width: 83.3rem;
+  margin: 0 auto;
+  padding-left: 12rem;
+}
+.transform-vector-box {
+  position: relative;
+}
+
+.transform-box {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  max-width: 76.8rem;
+  min-height: 22.4rem;
+
+  background-image: linear-gradient(to right, #cdd8eb 0%, #fefefe 100%);
+
+  padding: 4rem;
+  border-radius: 2.4rem;
+  border: 0.5px solid #005ae2;
+}
+.transform-img-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.transform-text {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 10rem;
+  line-height: 1.5;
+}
+/* ****************************** */
+/* ****POSSIBILITIES SECTION**** */
+/* ****************************** */
