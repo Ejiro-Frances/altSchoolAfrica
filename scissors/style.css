@@ -13,8 +13,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   color: #141414;
-  max-width: 115rem;
-  margin: 2.5rem auto;
 }
 
 ul {
@@ -31,7 +29,18 @@ a {
 /* ******REUSEABLE STYLES******* */
 /* ****************************** */
 .btn-container {
-  margin: 9.4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6.4rem 0;
+  gap: 1.5rem;
+}
+.btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 10rem;
+}
+.btn-trans {
+  border: 1px solid #005ae2;
 }
 .margin-left-md {
   margin-left: 4.2rem;
@@ -44,6 +53,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 115rem;
+  margin: 2.5rem auto;
 }
 .logo-icon {
   border-right: 0.3rem solid blue;
@@ -134,5 +145,225 @@ a {
   line-height: 1.5;
 }
 /* ****************************** */
-/* ****POSSIBILITIES SECTION**** */
+/* ****POSSIBILITIES SECTION***** */
 /* ****************************** */
+
+.ellipse-container {
+  height: 23vh;
+  width: 100%;
+  background: #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.ellipse-container:after {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+
+  position: absolute;
+  top: 0;
+  left: -5.5rem;
+  content: "";
+  transform: rotate(-30deg);
+  transform-origin: left;
+  overflow: hidden;
+}
+.ellipse-container::before {
+  height: 110%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  right: -5.6rem;
+  transform: rotate(30deg);
+  transform-origin: right;
+}
+.possible-outcomes {
+  background-image: linear-gradient(
+    to right,
+    #e2e9f0b2 70%,
+    #dce4ebb2 100%,
+    #e2e9f000 100%
+  );
+  background-size: cover;
+
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 40fr 15fr 15fr 15fr 15fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 10%;
+}
+
+/* ****************************** */
+/* **********WHY SECTION********* */
+/* ****************************** */
+.black-line {
+  content: "";
+  width: 5px;
+  height: 10px;
+
+  background-image: linear-gradient(to bottom, #112232 100%, #4d6b88 0%);
+}
+.why-section {
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  gap: 7rem;
+}
+.why-grid-within {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+/* ****************************** */
+/* *********PRICE SECTION******** */
+/* ****************************** */
+.price-header {
+  max-width: 57.61rem;
+  margin: 6rem auto 10rem;
+}
+.plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45.5rem;
+}
+.plan-box {
+  border: 0.4px solid #005ae2;
+  border-radius: 1.2rem;
+  padding: 2rem 4rem;
+  min-height: 40rem;
+  align-content: center;
+}
+.plan-box-basic {
+  transform: translateX(1.5rem);
+}
+.plan-box-pro {
+  background-image: linear-gradient(#1e3448 100%, #1e344800 0%);
+  color: #ffffff;
+  min-height: 50rem;
+  position: relative;
+  z-index: 100;
+}
+.plan-box-teams {
+  transform: translateX(-1.2rem);
+}
+.plan-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.plan-price {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.plan-description {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.plan-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.plan-lists img {
+  margin-right: 0.5rem;
+}
+/* ****************************** */
+/* *********FORM SECTION******** */
+/* ****************************** */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1e3448;
+  min-height: 70vh;
+}
+
+.form {
+  background: #ffffff;
+  border-radius: 1.2rem;
+  padding: 3rem;
+  color: #3284ff;
+  max-width: 47.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+input,
+select {
+  border: 1px solid #3284ff;
+  outline: 1px solid #3284ff;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  color: #3284ff;
+  letter-spacing: 1px;
+}
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+::placeholder,
+select {
+  color: #3284ff;
+  font-size: 1.2rem;
+}
+.form-condition a {
+  font-weight: 900;
+}
+
+/* ****************************** */
+/* **********FAQs SECTION******** */
+/* ****************************** */
+.faq-section {
+  max-width: 79.2rem;
+  margin: 3rem auto;
+}
+.details {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #cdd8eb;
+  padding: 2rem 0;
+}
+.summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.minus {
+  display: none;
+}
+.details[open] .minus {
+  display: block;
+}
+.details[open] .plus {
+  display: none;
+}
+
+/* ****************************** */
+/* ******REVOLUTION SECTION****** */
+/* ****************************** */
+.revolution-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1e3448;
+  color: #ffffff;
+  gap: 2rem;
+  min-height: 40vh;
+}
