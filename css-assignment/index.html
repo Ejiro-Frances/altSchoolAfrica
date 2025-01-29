@@ -19,18 +19,33 @@
         padding: 0;
       }
 
+      html {
+        font-size: 62.5%;
+      }
+
       body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-image: radial-gradient(
+          hsl(214, 47%, 23%),
+          hsl(237, 49%, 15%)
+        );
+        color: #fff;
       }
       a {
         display: inline-block;
         text-decoration: none;
         color: inherit;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
       }
       .assignment-lists {
         display: flex;
@@ -39,7 +54,10 @@
         margin-top: 2rem;
       }
       .assignment-lists li a:hover {
-        color: blueviolet;
+        text-decoration: underline;
+      }
+      .assignment-lists span {
+        color: rgb(11, 179, 235);
       }
     </style>
   </head>
@@ -55,41 +73,41 @@
         <ol class="assignment-lists">
           <li>
             <a href="./otter-essay/index.html">
-              Assignment One
+              Assignment One:
               <span>Otter essay</span>
             </a>
           </li>
 
           <li>
             <a href="./huckle-berry/index.html">
-              Assignment Two
+              Assignment Two:
               <span>Huckle berry</span>
             </a>
           </li>
 
           <li>
             <a href="./novus-watch/index.html">
-              Assignment Three
+              Assignment Three:
               <span>Novus watch</span>
             </a>
           </li>
           <li>
             <a href="./individual-sign-up/index.html">
-              Assignment Four
+              Assignment Four:
               <span>Sign up page</span>
             </a>
           </li>
 
           <li>
             <a href="./wp-pusher/index.html">
-              Assignment Five
+              Assignment Five:
               <span>Wp Pusher</span>
             </a>
           </li>
 
           <li>
             <a href="./scissors/index.html">
-              Assignment six
+              Assignment six:
               <span>Scissors Landing page</span>
             </a>
           </li>

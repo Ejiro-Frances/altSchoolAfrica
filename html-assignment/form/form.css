@@ -1,0 +1,158 @@
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff5f5;
+}
+.left-col {
+  padding: 5rem;
+  text-align: center;
+}
+.altschool-img {
+  width: 80%;
+  height: 80%;
+}
+.prim-heading {
+  font-size: 4.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 3rem 0 1rem;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.social-icon {
+  color: rgb(3, 103, 242);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* Right Column */
+.right-col {
+  background: #fff;
+  padding: 2.5rem 3.4rem;
+}
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.home:link,
+.home:visited {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.home:hover,
+.home:active {
+  color: rgb(3, 103, 242);
+}
+.sign-in:link,
+.sign-in:visited {
+  color: rgb(3, 103, 242);
+  font-weight: 600;
+}
+
+/* ************** */
+.sign-up {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: rgb(26, 32, 44);
+  /* margin-bottom: 1rem; */
+}
+.form-description {
+  color: rgb(113, 128, 150);
+  font-weight: 500;
+  padding: 1rem 0 2rem;
+  font-size: 1.6rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: rgb(26, 32, 44);
+}
+fieldset {
+  border: none;
+  display: grid;
+  column-gap: 2.4rem;
+  grid-template-columns: 1fr 1fr;
+}
+input,
+select {
+  display: block;
+  outline: none;
+  border: 1px solid gainsboro;
+  width: 100%;
+
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+label {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+::placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(26, 32, 44);
+}
+.consent-clause {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #757272;
+}
+.consent-clause .consent-terms {
+  color: rgb(3, 103, 242);
+}
+.sign-btn {
+  background: rgb(3, 103, 242);
+  border: none;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+@media (max-width: 38rem) {
+  .main,
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+  .left-col {
+    display: none;
+  }
+}
